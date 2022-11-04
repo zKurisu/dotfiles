@@ -1,0 +1,117 @@
+snippet mark "To highlight a text"
+<mark>$1</mark> $2
+endsnippet
+
+snippet "sco?de?" "To write code in multiple lines" rb
+\`\`\`sh
+	$ $1
+\`\`\`
+$2
+endsnippet
+
+snippet "co?de?" "To write code in multiple lines" rb
+\`\`\`
+	$1
+\`\`\`
+$2
+endsnippet
+
+snippet link "To write the link part"
+[$1]($2)
+endsnippet
+
+snippet "li?st?" "To write a list" rb
+  - $1
+  - $2
+endsnippet
+
+snippet mt "To write LaTeX"
+`echo $`$1`echo $`
+endsnippet
+
+snippet lmt "To write long LaTeX"
+`echo \$\$`
+$1
+`echo \$\$`
+endsnippet
+
+snippet asm "To write inline assembly" 
+__asm__("$1\n\t");
+endsnippet
+
+snippet bimg "Add picture" 
+![$1](../img/$2)
+endsnippet
+
+snippet cimg "Add picture" 
+![$1](./img/$2)
+endsnippet
+
+snippet 2 "##" 
+## $1
+endsnippet
+
+snippet 3 "###" 
+### $1
+endsnippet
+
+snippet 4 "####" 
+#### $1
+endsnippet
+
+snippet 5 "#####" 
+##### $1
+endsnippet
+
+snippet tbg "Begin to write table" 
+|${1:The first row}|
+-|-|-
+${2:Begin to write, and you should use <leader>tm to open table mode}
+endsnippet
+
+snippet pcd "Code of perl" 
+\`\`\`perl
+	$1
+\`\`\`
+$2
+endsnippet
+
+snippet \frac "LaTeX frac" 
+\frac{${1:numerator}}{${2:denominator}}
+endsnippet
+
+snippet \int "LaTeX Interal" 
+\int{${1:lower}}{${2:upper}}
+endsnippet
+
+snippet \sum "LaTeX sum" 
+\sum_{${1:below}}^{${2:upper}}${3:besides}
+endsnippet
+
+snippet ccd "C code" 
+\`\`\`c
+	$1
+\`\`\`
+$2
+endsnippet
+
+snippet leasts "Least squar" 
+\because b = \frac{\sum_{i=1}^n (x_i - \overline{x})(y_i - \overline{y})}{\sum_{i=1}^n (x_i - \overline{x})^2} \newline
+a = \overline{y} - b \overline{x} \newline
+\overline{x} = \frac{1}{k} \sum_{i=1}^k x_i  \newline
+\overline{y} = \frac{1}{k} \sum_{i=1}^k y_i  \newline
+endsnippet
+
+snippet labrep "Labreport for physics" 
+# Abstract
+
+# Calculation
+
+# Results
+
+# Graphing
+
+# Conclusion
+
+# Answer to the Questions
+endsnippet

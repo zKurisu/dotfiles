@@ -1,0 +1,59 @@
+snippet bg "To write some structure"
+/*
+ * `!p snip.rv=snip.fn`
+ * ${1:function}
+ * Copyright (C) Jie
+ * `date +%Y-%m-%d`
+ *
+ */
+`echo "#include <stdio.h>"`
+$3
+int main(void)
+{
+	$4
+	return 0;
+}
+endsnippet
+
+snippet cm "To write comment" 
+/* $1 */
+endsnippet
+
+snippet mcm "To write comment in multiple line" 
+/*
+ * $1
+ */
+endsnippet
+
+snippet fn "To write function" 
+${1:return type}(${2:argus})
+{
+	return $3;
+}
+endsnippet
+
+snippet for "To write for loop quickly" 
+for ($1; $2; $3)
+endsnippet
+
+snippet scanf "To write scanf function" 
+scanf("$1", $2);
+endsnippet
+
+snippet printf "To write printf funtion" 
+printf("$1"$2);
+endsnippet
+
+snippet malloc "If success"                
+malloc(sizeof(${1:type}));                 
+
+if (${2:Pointer} == NULL) {                
+    printf("out of memory!\n");            
+    exit(1);                               
+}                                          
+endsnippet
+
+snippet free "return the memory and set NULL" 
+free(${1:Pointer});
+$1 = NULL;
+endsnippet
