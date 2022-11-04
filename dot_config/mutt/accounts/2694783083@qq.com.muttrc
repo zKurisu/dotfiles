@@ -1,0 +1,22 @@
+# vim: filetype=neomuttrc
+# muttrc file for account 2694783083@qq.com
+set realname = "2694783083"
+set from = "2694783083@qq.com"
+set sendmail = "msmtp -a 2694783083@qq.com"
+alias me 2694783083 <2694783083@qq.com>
+set folder = "/home/jie/.local/share/mail/2694783083@qq.com"
+set header_cache = /home/jie/.cache/mutt-wizard/2694783083@qq.com/headers
+set message_cachedir = /home/jie/.cache/mutt-wizard/2694783083@qq.com/bodies
+set mbox_type = Maildir
+set hostname = "qq.com"
+source /usr/share/mutt-wizard/switch.muttrc
+set spoolfile = +INBOX
+set postponed = +Drafts
+set trash = +Trash
+set record = +Sent
+
+macro index o "<shell-escape>mw -y 2694783083@qq.com<enter>" "run mbsync to sync 2694783083@qq.com"
+macro index \eg "<enter-command>unset wait_key<enter><shell-escape>gpg --list-secret-keys; printf 'Enter email ID of user to publish: '; read eID; printf 'Enter fingerprint of GPG key to publish: '; read eFGPT; /usr/libexec/gpg-wks-client --create \$eFGPT \$eID | msmtp --read-envelope-from --read-recipients -a 2694783083@qq.com<enter>"  "publish GPG key to WKS provider"
+macro index \eh "<pipe-message>/usr/libexec/gpg-wks-client --receive | msmtp --read-envelope-from --read-recipients -a 2694783083@qq.com<enter>" "confirm GPG publication"
+
+mailboxes "=INBOX" "=Sent Messages" "=Drafts" "=Deleted Messages" "=Junk" "=&UXZO1mWHTvZZOQ-/QQ&kK5O9ouilgU-"

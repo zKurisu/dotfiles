@@ -1,0 +1,11 @@
+brightnessctl set 20% &
+redshift -P -O 4800 &
+fcitx5 &
+picom &
+#xwallpaper --zoom /home/jie/Gitrepo/mybgd/wallhaven-28o2ym_1920x1080.png
+/home/jie/scripts/perl/next_wallpaper.pl &
+while xsetroot -name "Wifi:$(cat /sys/class/net/wlan0/operstate)  |  Ethernet:$(cat /sys/class/net/wlan0/operstate)  |  Battery:$(acpi -b | awk '{print $4}' | cut -d"," -f1)  Volume:$(amixer get Master | awk -F'[][]' 'END{ print $4":"$2 }')  |  $(LC_ALL='C' date +'%F[%b %a] %R')"
+do
+sleep 600
+done &
+exec dwm

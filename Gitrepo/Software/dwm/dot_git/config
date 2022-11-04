@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "gitee"]
+	url = https://gitee.com/orkarin/mydwm.git
+	fetch = +refs/heads/*:refs/remotes/gitee/*
+[branch "master"]
+	remote = gitee
+	merge = refs/heads/master
