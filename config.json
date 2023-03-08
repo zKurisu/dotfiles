@@ -1,16 +1,15 @@
 {
-   "repository" : "https://gitee.com/orkarin/dotfiles.git",
-   "description" : "my dotfiles",
-   "password" : "13723786298Zjj",
-   "last push time" : "2023-03-08",
-   "user" : "Orkarin",
    "last link time" : "2023-03-08",
-   "directory" : "/home/jie/.config/dotfile",
+   "password" : "13723786298Zjj",
+   "user" : "Orkarin",
+   "description" : "my dotfiles",
    "config name" : "config.json",
+   "directory" : "/home/jie/.config/dotfile",
    "dotfiles" : {
-      "zsh" : "/home/jie/.zshrc",
-      "dwm" : "/home/jie/Disk/Gitrepo/Software/dwm/",
       "nvim" : "/home/jie/.config/nvim/init.lua",
-      "test" : "/tmp/test.conf"
-   }
+      "dwm" : "/home/jie/Disk/Gitrepo/Software/dwm/",
+      "zsh" : "/home/jie/.zshrc"
+   },
+   "repository" : "https://gitee.com/orkarin/dotfiles.git",
+   "last push time" : "2023-03-08"
 }
