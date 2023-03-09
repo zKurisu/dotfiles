@@ -1,0 +1,1 @@
+/home/jie/Documents/CNSS/SA/recruit_new/懒人福音/install.sh
