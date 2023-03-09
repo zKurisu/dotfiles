@@ -231,12 +231,9 @@ sub add_dotfile {
     print {$fh} $json->pretty->encode($self);
 }
 
-sub link_all {
-    my $self      = shift;
-    my @stored_dotfiles  = $self->ls_dotfiles();
-    my @app_names = map { "dot_" . $_ } $self->ls_app();
-
-    my @want_dotfiles = map {
+sub home_handler {
+    my @ori_path = @_;
+    my @home_path = map {
         my @dirs = splitdir($_);
         if ($dirs[0] eq '~') {
             $dirs[0] = $ENV{HOME};
@@ -245,7 +242,16 @@ sub link_all {
             $dirs[2] = $ENV{USER};
         }
         catfile(@dirs);
-    } @stored_dotfiles;
+    } @ori_path;
+
+    return @home_path;
+}
+
+sub link_all {
+    my $self      = shift;
+    my @app_names = map { "dot_" . $_ } $self->ls_app();
+
+    my @want_dotfiles = home_handler( $self->ls_dotfiles() );
     my @target_files =
       pairwise { catfile( $g_dir, $a, basename($b) ) }
         @app_names, @want_dotfiles;
@@ -282,8 +288,8 @@ sub link_all {
 sub deploy {
     my $self = shift;
 
-    my @deploy_dotfiles = $self->ls_dotfiles();
-    my @app_names       = $self->ls_app();
+    my @deploy_dotfiles = home_handler($self->ls_dotfiles());
+    my @app_names = map { "dot_" . $_ } $self->ls_app();
     my @ori_dotfiles =
       pairwise { catfile( $g_dir, $a, basename($b) ) }
     @app_names, @deploy_dotfiles;
@@ -297,7 +303,7 @@ sub deploy {
         }
         else {
             my $need_dir = dirname($deploy_dotfiles[$_]);
-            system "mkdir -p ";
+            system "mkdir -p $need_dir";
             if ( -f $ori_dotfiles[$_] ) {
                 system "cp $ori_dotfiles[$_] $deploy_dotfiles[$_]";
             }
