@@ -88,6 +88,7 @@ alias d2p='libreoffice --headless --convert-to pdf '
 alias src='source ~/.zshrc'
 alias new='/home/jie/scripts/perl/new.pl'
 alias armsim='mono /home/jie/Disk/Gitrepo/armsim/armsim/ARMSim.exe'
+alias dm='perl /home/jie/scripts/perl/My/Dotfile.pm'   
 
 
 #####
