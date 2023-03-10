@@ -15,16 +15,8 @@ use Module::CoreList;
 use File::Spec::Functions qw(splitdir catdir catfile);
 use File::Basename;
 use File::Find;
+use Net::IP;
 
-clear();
-sub clear {
-    my $dir = dirname($ENV{DOTCONFIG});
-    my @targets = glob "$dir/*";
-
-    foreach my $target (@targets) {
-        if ( $target !~ /(?:json)|(?:.git)/  ) {
-            system "rm -rf $target";
-            say "rm $target";
-        }
-    }    
-}
+my $ip = Net::IP->new('193.0.1/24') or die (Net::IP::Error());
+print ("IP  : ".$ip->ip()."\n");
+print ("Sho : ".$ip->short()."\n");                                                                                              

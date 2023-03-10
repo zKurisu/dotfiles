@@ -53,7 +53,7 @@ my $template_content = <<'TEMP';
 {
     "user" : "",
     "password" : "",
-    "update time" : "", 
+    "last link time" : "", 
     "last push time" : "",
     "description" : "my dotfiles",
     "config name" : "config.json",

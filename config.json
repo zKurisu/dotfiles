@@ -1,18 +1,19 @@
 {
+   "config name" : "config.json",
+   "last link time" : "2023-03-10",
+   "last push time" : "2023-03-09",
+   "update time" : "",
    "dotfiles" : {
+      "scripts" : "~/scripts",
+      "zsh" : "~/.zshrc",
       "ranger" : "~/.config/ranger/",
       "dwm" : "~/Disk/Gitrepo/Software/dwm",
-      "zsh" : "~/.zshrc",
       "st" : "~/Disk/Gitrepo/Software/st",
-      "scripts" : "~/scripts",
-      "nvim" : "~/.config/nvim/init.lua"
+      "nvim" : "~/.config/nvim/init.lua",
+      "picom" : "~/.config/picom/"
    },
-   "last link time" : "2023-03-09",
-   "last push time" : "2023-03-09",
-   "user" : "Orkarin",
    "description" : "my dotfiles",
    "password" : "13723786298Zjj",
-   "config name" : "config.json",
    "repository" : "https://gitee.com/orkarin/dotfiles.git",
-   "update time" : ""
+   "user" : "Orkarin"
 }

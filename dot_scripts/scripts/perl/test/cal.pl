@@ -25,4 +25,4 @@ use constant E    => 1.61 * 10**(-19);
 use constant Em   => 9.11 * 10**(-31);
 use constant C    => 3 * 10**8;
 
-say 1/(2 * pi * 10**5);
+print binary(255);
