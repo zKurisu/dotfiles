@@ -1,0 +1,13 @@
+snippet bg "Begin to write a Makefile" 
+DEL 	= 
+ADDPATH = .
+MGCC 	= gcc -Wall -I$(ADDPATH)
+
+all:
+	${2:The whole process}
+
+clear:
+	$(DEL)
+
+.PHONY: all clear
+endsnippet

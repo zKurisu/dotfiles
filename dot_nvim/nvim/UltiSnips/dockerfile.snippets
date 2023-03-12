@@ -1,0 +1,18 @@
+snippet ubg "The structure of my docker file"
+# Usage: $1
+FROM $2
+MAINTAINER Jie Orkarin "2694783083@qq.com"
+ENV REFRESHED_AT `date +%Y-%m-%d`
+RUN apt-get update && apt-get -y install ca-certificates
+RUN sed -i "s@http://.*archive.ubuntu.com@https://mirrors.tuna.tsinghua.edu.cn@g" /etc/apt/sources.list && sed -i "s@http://.*security.ubuntu.com@https://mirrors.tuna.tsinghua.edu.cn@g" /etc/apt/sources.list
+RUN apt-get update
+$3
+endsnippet
+
+snippet bg "The structure of my docker file"
+# Usage: $1
+FROM $2
+MAINTAINER Jie Orkarin "2694783083@qq.com"
+ENV REFRESHED_AT `date +%Y-%m-%d`
+$3
+endsnippet

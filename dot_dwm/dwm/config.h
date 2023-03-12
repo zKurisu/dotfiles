@@ -104,10 +104,10 @@ static const char *chatgpt[] = { "st", "/home/jie/scripts/perl/chatgpt.pl", NULL
 static const char *update_blog[] = { "st", "/home/jie/scripts/perl/update_blog.pl", NULL};
 static const char *show_nba_schedules[] = { "st", "/home/jie/scripts/perl/spider/nba_schedule.pl", NULL};
 static const char *network_toggle[] = { "st", "/home/jie/scripts/perl/network_toggle.pl", NULL};
+static const char *neomutt_open[] = { "st", "neomutt", NULL};
 
 
 
-// static const char *neomutt_open[] = { "neomutt" , NULL};
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -121,7 +121,7 @@ static const Key keys[] = {
 	{ 0,                            0x1008FF13,spawn,          {.v = volume_up } },
     { MODKEY|Mod1Mask,              XK_n,      spawn,          {.v = next_wallpaper       } },
     { MODKEY|Mod1Mask,              XK_s,      spawn,          {.v = screenShot       } },
-    { MODKEY|Mod1Mask,              XK_m,      spawn,          {.v = musicPlay       } },
+    { MODKEY|Mod1Mask,              XK_p,      spawn,          {.v = musicPlay       } },
     { MODKEY|Mod1Mask,              XK_v,      spawn,          {.v = vpn_select       } },
     { MODKEY|Mod1Mask,              XK_l,      spawn,          {.v = slock       } },
     { MODKEY|Mod1Mask,              XK_w,      spawn,          {.v = connct_net       } },
@@ -129,7 +129,7 @@ static const Key keys[] = {
     { MODKEY|Mod1Mask,              XK_u,      spawn,          {.v = update_blog       } },
     { MODKEY|Mod1Mask,              XK_g,      spawn,          {.v = show_nba_schedules       } },
     { MODKEY|Mod1Mask,              XK_t,      spawn,          {.v = network_toggle       } },
-    // { MODKEY|Mod1Mask,              XK_m,      spawn,          {.v = neomutt_open       } },
+    { MODKEY|Mod1Mask,              XK_m,      spawn,          {.v = neomutt_open       } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY|ShiftMask,             XK_j,      rotatestack,    {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_k,      rotatestack,    {.i = -1 } },

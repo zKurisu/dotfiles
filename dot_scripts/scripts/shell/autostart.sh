@@ -9,7 +9,8 @@ zerotier-one -U -d
 # xflux -l 30.58 -g 104.07 -k 4000
 
 fcitx5 &
-/usr/bin/perl /home/jie/scripts/perl/scheduled_task.pl 
+/usr/bin/perl /home/jie/scripts/perl/update_blog.pl 
+/usr/bin/perl /home/jie/scripts/perl/update_mail.pl 
 /bin/bash ~/scripts/shell/wp-autochange.sh &
 /bin/bash ~/scripts/shell/volume_basic.sh &
 /bin/bash ~/scripts/shell/dwm_music_play.sh &

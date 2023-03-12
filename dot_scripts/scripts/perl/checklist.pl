@@ -170,7 +170,7 @@ my %data = (
     game => [qw(supertuxkart xonotic minetest wesnoth openttd openra flare ryzom
         )],
 
-    tool => [qw(tcpdump geogebra lyns w3m vagrant msfconsole metasploit
+    tool => [qw(tcpdump geogebra lyns w3m vagrant msfconsole metasploit bf66.me maltego
         )],
 
     stop => ["CAD num: " 

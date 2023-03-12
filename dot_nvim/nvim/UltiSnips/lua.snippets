@@ -1,0 +1,19 @@
+snippet bg "To write some structure"
+#! /usr/bin/lua
+--
+-- `!p snip.rv=snip.fn`
+-- ${1:function}
+-- Copyright (Lua) Jie
+-- `date +%Y-%m-%d`
+--
+--
+$3
+endsnippet
+
+snippet km "Write keymap for nvim" 
+keymap("${1:mode}", "${2:keymapping}", "${3:original keys}", "${4:options like noremap}")
+endsnippet
+
+snippet sec "Section of nvim config file" 
+-- ==================== ${1:section name} ====================
+endsnippet

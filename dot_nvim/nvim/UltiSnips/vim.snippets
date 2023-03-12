@@ -1,0 +1,23 @@
+snippet sec "Begin a section in .vim file" 
+" ==================== $1 ====================
+endsnippet
+
+snippet bg "Begin to write vimscript" 
+"  `!p snip.rv=snip.fn`
+"
+"  ${1:function}
+"
+"  Copyright (Vimscript) Jie
+"  `date +%Y-%m-%d`
+" 
+endsnippet
+
+snippet pf "Perl function" 
+function! ${1:function name}
+perl << EOF
+ 
+${2:Body}
+
+EOF
+endfunction
+endsnippet

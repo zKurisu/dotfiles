@@ -1,0 +1,249 @@
+snippet mark "To highlight a text"
+<mark>$1</mark> $2
+endsnippet
+
+snippet "sco?de?" "To write code in multiple lines" rb
+\`\`\`sh
+	$ $1
+\`\`\`
+$2
+endsnippet
+
+snippet "hco?de?" "To write code in multiple lines" rb
+\`\`\`html
+	$1
+\`\`\`
+$2
+endsnippet
+
+snippet "jco?de?" "To write code in multiple lines" rb
+\`\`\`js
+	$1
+\`\`\`
+$2
+endsnippet
+
+snippet "hco?de?" "To write code in multiple lines" rb
+\`\`\`html
+	$1
+\`\`\`
+$2
+endsnippet
+snippet "co?de?" "To write code in multiple lines" rb
+\`\`\`
+	$1
+\`\`\`
+$2
+endsnippet
+
+snippet "vco?de?" "To write code in multiple lines" rb
+\`\`\`vim
+	$1
+\`\`\`
+$2
+endsnippet
+
+snippet "qcd" "To write code in multiple lines" rb
+\`\`\`sql
+	$1
+\`\`\`
+$2
+endsnippet
+
+snippet "lcd" "To write code in multiple lines" rb
+\`\`\`lua
+	$1
+\`\`\`
+$2
+endsnippet
+
+snippet link "To write the link part"
+[$1]($2)
+endsnippet
+
+snippet "li?st?" "To write a list" rb
+  - $1
+  - $2
+endsnippet
+
+snippet "oli?st?" "To write a list" rb
+  1. $1
+  2. $2
+endsnippet
+
+snippet mt "To write LaTeX"
+`echo $`$1`echo $`
+endsnippet
+
+snippet lmt "To write long LaTeX"
+`echo \$\$`
+\\displaylines
+{
+$1
+}
+`echo \$\$`
+endsnippet
+
+snippet asm "To write inline assembly" 
+__asm__("$1\n\t");
+endsnippet
+
+snippet bimg "Add picture" 
+![$1](../img/$2)
+endsnippet
+
+snippet cimg "Add picture" 
+![$1](./img/$2)
+endsnippet
+
+snippet 2 "##" 
+## $1
+endsnippet
+
+snippet 3 "###" 
+### $1
+endsnippet
+
+snippet 4 "####" 
+#### $1
+endsnippet
+
+snippet 5 "#####" 
+##### $1
+endsnippet
+
+snippet tbg "Begin to write table" 
+|${1:The first row}|
+-|-|-
+${2:Begin to write, and you should use <leader>tm to open table mode}
+endsnippet
+
+snippet pcd "Code of perl" 
+\`\`\`perl
+	$1
+\`\`\`
+$2
+endsnippet
+
+snippet \frac "LaTeX frac" 
+\frac{${1:numerator}}{${2:denominator}}
+endsnippet
+
+snippet \int "LaTeX Interal" 
+\int{${1:lower}}{${2:upper}}
+endsnippet
+
+snippet \sum "LaTeX sum" 
+\sum_{${1:below}}^{${2:upper}}${3:besides}
+endsnippet
+
+snippet ccd "C code" 
+\`\`\`c
+	$1
+\`\`\`
+$2
+endsnippet
+
+snippet leasts "Least squar" 
+\because b = \frac{\sum_{i=1}^n (x_i - \overline{x})(y_i - \overline{y})}{\sum_{i=1}^n (x_i - \overline{x})^2} \newline
+a = \overline{y} - b \overline{x} \newline
+\overline{x} = \frac{1}{k} \sum_{i=1}^k x_i  \newline
+\overline{y} = \frac{1}{k} \sum_{i=1}^k y_i  \newline
+endsnippet
+
+snippet slabrep "Short labreport for physics" 
+# Abstract
+- aim
+- physics principle
+- significat results
+- learn from exp
+
+The aim of the expetiment is to ... and the result got in this experiment is ... The accuracy may be influenced by ...
+# Calculation
+
+# Results
+- data table
+- graph
+
+# Graphing
+
+# Conclusion
+- main findings
+
+# Answer to the Questions
+endsnippet
+
+snippet llabrep "Long labreport for physics" 
+# Abstract
+- aim
+- physics principle
+- significat results
+- learn from exp
+
+# Introduction
+- background
+- physical principle
+- objectives (aim)
+
+# Experimental procedure
+- list equipment
+- steps, paragraph structure
+
+# Results
+- data table
+- graph
+
+# Discussion
+- refer to the data
+- why got these data
+- compare expected results with obtained results
+
+# Conclusion
+- main findings
+
+# References
+[1] Fu Hao & Esmond Agurgo Balfour, Introductory Physics Experiments for Undergraduates, Science, Beijing, 2017
+
+# Answer to the Questions
+
+# Calculations
+endsnippet
+
+snippet abs "LaTeX absolute value" 
+\left\vert $1 \right\vert
+endsnippet
+
+snippet new "LaTeX newline" 
+\newline~ \newline
+$1
+endsnippet
+
+snippet up "LaTeX uparrow" 
+\uparrow
+endsnippet
+
+snippet do "LaTeX downarrow" 
+\downarrow
+endsnippet
+
+snippet case "LaTeX cases" 
+\begin{cases}
+$1
+\end{cases}
+endsnippet
+
+snippet ud "LaTeX underset" 
+\underset{${1:under}}{${2:upper}}
+endsnippet
+
+snippet ov "LaTeX underset" 
+\overset{${1:upper}}{${2:under}}
+endsnippet
+
+snippet dg "LaTeX degree" 
+${1:degrees}^\circ${2:minutes}^\prime$3
+endsnippet
+
+snippet ref "For IEEE net pic" 
+${1:name}, "${2:title}," ${3:web title}. (${4:M}. ${5:D}, ${6:Y}). Accessed: Feb. 18, 2023. [Online]. Available: ${7:link}
+endsnippet

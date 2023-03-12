@@ -46,6 +46,7 @@ vim.cmd [[
       \ "user/vim-table-mode.vim",
       \ "user/vim-mundo.vim",
       \ "user/filetype.vim",
+      \ "user/funcfold.vim",
       \ "user/run.vim",
       \ "user/chineseCount.vim",
       \ "user/mark.vim",

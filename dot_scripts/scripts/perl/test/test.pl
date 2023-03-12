@@ -16,7 +16,12 @@ use File::Spec::Functions qw(splitdir catdir catfile);
 use File::Basename;
 use File::Find;
 use Net::IP;
+use Getopt::Std;
 
-my $ip = Net::IP->new('193.0.1/24') or die (Net::IP::Error());
-print ("IP  : ".$ip->ip()."\n");
-print ("Sho : ".$ip->short()."\n");                                                                                              
+getopt("v:");
+
+{
+    no strict;
+    no warnings;
+    say "Hello, your option is [$opt_v]";
+}

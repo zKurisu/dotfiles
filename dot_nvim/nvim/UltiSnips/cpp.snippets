@@ -1,0 +1,41 @@
+snippet hbg "Begin to write a head file" 
+/* ${1:filename} */
+#ifndef ${2:like NAME_H}
+#define $2
+$3
+#endif
+endsnippet
+
+snippet cm "Comment" 
+/* ${1:Comment} */
+endsnippet
+
+snippet agkbg "To begin writing a agk game" 
+// Includes, namespace and prototypes
+#include "template.h"
+using namespace AGK;
+app App;
+
+// Constants for the screen resolution
+const int SCREEN_WIDTH = 640;
+const int SCREEN_HEIGHT = 480;
+
+// Begin app, called once at the start
+void app::Begin( void )
+{
+// Change the default persentage coordinate system into virtual resolution system 
+agk::SetVirtualResolution(640, 480);
+}
+
+// Main loop, called every frame
+void app::Loop( void )
+{
+
+}
+
+// Called when the app ends
+void app::End(void)
+{
+
+}
+endsnippet

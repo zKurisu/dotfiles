@@ -30,7 +30,7 @@ sub Ask {
         return 0;
     }
 
-    my $openai = OpenAI::API->new( api_key => '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' );
+    my $openai = OpenAI::API->new( api_key => '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' );
     
     say "Waiting for the response...";
 

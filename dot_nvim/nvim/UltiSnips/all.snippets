@@ -1,0 +1,15 @@
+snippet test "To test if it works"
+`echo 'it is ok'`$1
+endsnippet
+
+snippet snippet "To begin a snippet"
+snippet $1 "$2" $3
+$4
+`echo endsnippet`
+endsnippet
+
+snippet sp "To write a snippet by perl" 
+\`#! /usr/bin/perl
+$1\`
+endsnippet
+

@@ -1,0 +1,64 @@
+snippet bg "To begin a perl program" 
+#! /usr/bin/perl
+#  `!p snip.rv=snip.fn`
+#
+#  ${1:function}
+#
+#  Copyright (Perl) Jie
+#  `date +%Y-%m-%d`
+# 
+use 5.36.0;
+use utf8;
+use lib '/home/jie/scripts/perl/';
+$3
+endsnippet
+
+snippet pbg "To begin a write a perl module" 
+#! /usr/bin/perl
+#  `!p snip.rv=snip.fn`
+#
+#  ${1:function}
+#
+#  Copyright (Perl) Jie
+#  `date +%Y-%m-%d`
+# 
+package ${2:package name};
+use Exporter 'import';
+
+our @EXPORT = qw();
+
+$3
+endsnippet
+
+snippet hs "Write hash" 
+"$1" => "$2",
+endsnippet
+
+snippet qr "qr expression" 
+qr/$1/
+endsnippet
+
+snippet spo "Space operator" 
+<=> $1
+endsnippet
+
+snippet cons "Writing constant var" 
+use constant ${1:var name} => ${2:var value};
+endsnippet
+
+snippet has "Writing attributes of moose" 
+has '${1:attri name}' => (
+	is  => '${2:property of this attir, like ro}',
+	isa => '${3:type of this attri, like Str}',
+)
+endsnippet
+
+snippet over "Writing overload" 
+use overload '${1:original opes}' => ${2:handler};
+endsnippet
+
+snippet cm "Comments" 
+#######################################################################
+# $1
+#######################################################################
+endsnippet
