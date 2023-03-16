@@ -273,7 +273,7 @@ sub link_all {
                 system "cp $want_dotfiles[$_] $target_files[$_]";
             }
             if ( $? == 0 ) {
-                say "link $want_dotfiles[$_] to $target_files[$_] \e[32m[success]\e[0m";
+                say "cp $want_dotfiles[$_] to $target_files[$_] \e[32m[success]\e[0m";
             }
         }
         else {

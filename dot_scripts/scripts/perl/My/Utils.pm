@@ -122,3 +122,40 @@ sub color {
     my $full_string = shift;
     my $color_string =  shift;
 }
+
+sub module_check {
+    use Test::More;
+    if ( !defined $ARGV[0] or $ARGV[0] eq '-c' or $ARGV[0] eq 'check') {
+        my @modules = @_; 
+        my $count = @modules;
+        my ($state, @lack_modules);
+
+        foreach my $module (@modules) {
+            is($state = eval "require $module", 1, "Load $module");
+            if ( $state == 0 ) {
+                CORE::push @lack_modules, $module;
+            }
+        }
+
+        done_testing($count);
+        my $failed = Test::Builder->new->{Stack}->[0]->{failed};
+        if ($failed > 0) {
+            print "\e[31m[Please install the dependences]\e[0m\n";
+            print "Do you want install them now? [y/n]";
+            my $choice = <STDIN>;
+            if ( $choice =~ m/[yY]/ or $choice eq "\n" ) {
+                foreach my $module (@lack_modules) {
+                    system "cpanm $module";
+                }
+            }
+            else {
+                print "\n Exit...";
+            }
+            exit;
+        }
+    }
+}
+
+sub easy_pack {
+
+}

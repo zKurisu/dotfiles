@@ -173,9 +173,20 @@ my %data = (
     tool => [qw(tcpdump geogebra lyns w3m vagrant msfconsole metasploit bf66.me maltego
         )],
 
-    stop => ["CAD num: " 
-
+    sql => [
+        "\e[32m创建用户\e[0m            : CREATE USER 'newuser'\@'localhost' IDENTIFIED BY 'password';",
+        "\e[32m给用户添加权限\e[0m      : GRANT ALL PRIVILEGES ON dbname.* TO 'username'\@'hostname';",
+        "\e[32m查看当前用户\e[0m        : SELECT USER();",
+        "\e[32m查看数据库中所有用户\e[0m: SELECT User FROM mysql.user;",
+        "\e[32m删除数据库中的用户\e[0m  : DROP USER 'myuser'\@'localhost';",
+        "\e[32m查看已存在的数据库\e[0m  : SHOW DATABASES LIKE 'name';",
+        "\e[32m进入一个数据库\e[0m      : USE databasename;",
+        "\e[32m切换到另一个数据库\e[0m  : USE anotherdatabasename;",
+        "\e[32m查看当前使用的数据库\e[0m: SELECT DATABASE();",
+        "\e[32m显示数据库中的所有表\e[0m: SHOW TABLES;",
+        "\e[32m显示一个表中的所有列\e[0m: DESCRIBE tablename;"
         ],
+
 );
 
 

@@ -7,7 +7,10 @@ snippet bg "To write some structure"
 -- `date +%Y-%m-%d`
 --
 --
-$3
+package.path = package.path .. ";/home/jie/.luarocks/share/lua/5.4/?.lua;/usr/share/lua/5.4/pl/?.lua;/home/jie/scripts/lua/My/?.lua"
+require("strict")
+
+$2
 endsnippet
 
 snippet km "Write keymap for nvim" 

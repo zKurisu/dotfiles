@@ -1,4 +1,6 @@
-nmap <LEADER>dd :call RunDebug()<CR>
+if &ft == 'perl' || &ft == 'c'
+    nmap <LEADER>dd :call RunDebug()<CR>
+endif
 
 func! RunDebug()
     exec "w"

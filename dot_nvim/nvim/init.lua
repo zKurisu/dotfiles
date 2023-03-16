@@ -54,6 +54,8 @@ vim.cmd [[
       \ "user/vimspector.vim",
       \ "user/debug.vim",
       \ "user/lazygit.vim",
+      \ "user/vimpad.vim",
+      \ "user/distance.vim",
       \ "user/trans.vim",
       \ ]
 

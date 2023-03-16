@@ -134,11 +134,6 @@ _G.packer_plugins = {
     path = "/home/jie/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
     url = "https://github.com/lunarvim/darkplus.nvim"
   },
-  ["evalselection.vim"] = {
-    loaded = true,
-    path = "/home/jie/.local/share/nvim/site/pack/packer/start/evalselection.vim",
-    url = "https://github.com/vim-scripts/evalselection.vim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/jie/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -318,6 +313,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jie/.local/share/nvim/site/pack/packer/start/vim-table-mode",
     url = "https://github.com/dhruvasagar/vim-table-mode"
+  },
+  ["vimpad.nvim"] = {
+    loaded = true,
+    path = "/home/jie/.local/share/nvim/site/pack/packer/start/vimpad.nvim",
+    url = "https://github.com/yuki-uthman/vimpad.nvim"
   },
   vimspector = {
     loaded = true,

@@ -1,9 +1,9 @@
 # Close
 
 # TencentCloud
-export http_proxy="http://10.147.20.208:3128"
-export https_proxy="https://10.147.20.208:3128"
+# # export http_proxy="http://10.147.20.208:3128"
+# # export https_proxy="https://10.147.20.208:3128"
 
 # HuaweiCloud
-# # # # # # # # # # # # # # # # # # # export http_proxy="http://10.147.20.157:3128"
-# # # # # # # # # # # # # # # # # # # export https_proxy="https://10.147.20.157:3128"
+# export http_proxy="http://10.147.20.151:3128"
+# export https_proxy="https://10.147.20.151:3128"

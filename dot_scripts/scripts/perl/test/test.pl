@@ -7,7 +7,6 @@
 #  Copyright (Perl) Jie
 #  2023-03-07
 # 
-use 5.36.0;
 use utf8;
 use lib '/home/jie/scripts/perl/';
 use Data::Dumper;
@@ -15,13 +14,9 @@ use Module::CoreList;
 use File::Spec::Functions qw(splitdir catdir catfile);
 use File::Basename;
 use File::Find;
-use Net::IP;
-use Getopt::Std;
+use Term::ReadKey;
 
-getopt("v:");
-
-{
-    no strict;
-    no warnings;
-    say "Hello, your option is [$opt_v]";
-}
+my $obj = [3,5];
+print ref($obj), " ", $obj->[1], "\n";
+bless($obj, "Human::Cannibal");
+print ref($obj), " ", $obj->[1], "\n";

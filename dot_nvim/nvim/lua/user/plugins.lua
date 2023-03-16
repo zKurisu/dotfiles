@@ -63,6 +63,7 @@ return packer.startup(function(use)
   use {'folke/neodev.nvim'} -- develop doc for vim API in lua
   use {'chentoast/marks.nvim'} -- add marks
   use {'chrisbra/unicode.vim'} -- unicode
+  use {'yuki-uthman/vimpad.nvim'} -- unicode
   -- use {'vim-scripts/evalselection.vim' }
 
     -- jump
