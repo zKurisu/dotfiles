@@ -32,6 +32,8 @@ local options = {
     nu = true,
 --     cursorcolumn
     cursorline = true,
+--    list = true,
+--    listchars = "space:",
     showcmd = true,
     scrolloff=5,
     ignorecase = true,

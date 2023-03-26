@@ -8,30 +8,30 @@
 # 
 package My::Test;
 # use overload;
-use warnings::register;
+use Carp;
+use Exporter;
 
-sub import {
-    warnings::warn( __PACKAGE__ . ' used with empty import list' )
-        if @_ == 0 && warnings::enabled();
+our @EXPORT = qw(new Hello class_only_method);
+
+sub new {
+    my $class = shift;
+    my $self = {};
+    bless($self, $class);
+    return $self;
 }
+
 
 sub Hello {
     print "Hello!";
 }
 
-sub T_Warn {
-    warnings::warn("warninig coming") if warnings::enabled();
-}
-# sub import {
-#     overload::constant(
-#         integer => \&handler,
-#     );
-# }
-#
-# sub handler {
-#     my $integer = shift;
-#     return $integer * 10;
-# }
+sub class_only_method {
+    my $class = shift;
+    my $ref_return = ref $class;
+    print "ref_return: $ref_return";
+    croak "class method invoked on object" if ref $class;
 
+    #print "Class only\n";
+}
 
 1;

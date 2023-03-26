@@ -2,7 +2,8 @@
 #  Author: jie
 #  TIME: Sun Sep 18 03:49:55 PM CST 2022
 #  USAGE: Run scripts when dwm is open 
-brightnessctl set 20% &
+brightnessctl set 25% &
+# brightnessctl --device='nvidia_0' 75 &
 redshift -P -O 4000 &
 picom --experimental-backends --config ~/.config/picom/picom.conf &
 zerotier-one -U -d

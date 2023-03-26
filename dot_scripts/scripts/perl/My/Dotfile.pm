@@ -26,7 +26,7 @@ BEGIN {
             my $choice = <STDIN>;
             if ( $choice =~ m/[yY]/ or $choice eq "\n" ) {
                 foreach my $module (@lack_modules) {
-                    system "cpanm $module";
+                    system "cpan $module";
                 }
             }
             else {

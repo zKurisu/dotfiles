@@ -2,7 +2,7 @@
 use Mojolicious::Lite -signatures;
 use Data::Dumper;
 
-get '/' => sub ($c) {
+get '/foo' => sub ($c) {
   $c->render(template => 'index');
 };
 

@@ -25,4 +25,5 @@ use constant E    => 1.61 * 10**(-19);
 use constant Em   => 9.11 * 10**(-31);
 use constant C    => 3 * 10**8;
 
-print binary(255);
+say 22.73/0.8912;
+say 5.6/15;

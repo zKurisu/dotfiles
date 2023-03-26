@@ -91,6 +91,8 @@ alias new='/home/jie/scripts/perl/new.pl'
 alias armsim='mono /home/jie/Disk/Gitrepo/armsim/armsim/ARMSim.exe'
 alias dm='perl /home/jie/scripts/perl/My/Dotfile.pm'   
 alias changeme='python3 /home/jie/Disk/Gitrepo/changeme/changeme.py'
+alias vivado='/home/jie/Disk/Vivado/Vivado/2022.2/bin/vivado'
+alias htpwd='python /home/jie/Disk/Gitrepo/htpwdScan/htpwdScan.py'
 
 
 #####

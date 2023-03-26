@@ -171,6 +171,7 @@ my %data = (
         )],
 
     tool => [qw(tcpdump geogebra lyns w3m vagrant msfconsole metasploit bf66.me maltego
+            hypnotoad
         )],
 
     sql => [
@@ -186,6 +187,15 @@ my %data = (
         "\e[32m显示数据库中的所有表\e[0m: SHOW TABLES;",
         "\e[32m显示一个表中的所有列\e[0m: DESCRIBE tablename;"
         ],
+
+    task => [
+        "英语 CV, Cover Letter, Portfolio",
+        "数电进度",
+        "模电进度",
+        "英语 Group interview 准备",
+        "EP 进度",
+        "模电实验"
+    ],
 
 );
 
